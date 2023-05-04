@@ -9,12 +9,11 @@ dimensions = (640,320)
 
 directory = '.\Charts'
 charts = os.listdir(directory)
-removeList = ['charts.gif','GIF.png']
+removeList = ['charts.gif']
 for item in removeList:
     if item in charts:
         charts.remove(item)
 shuffle(charts)
-charts.insert(0, removeList[1])
 charts = charts[:n_imgs]
 images = []
 gif_directory = f'{directory}\charts.gif'
