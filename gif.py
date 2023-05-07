@@ -24,5 +24,5 @@ for chart in charts:
     image = image.convert("RGB")
     images.append(image)
 
-imageio.mimsave(gif_directory, images, duration=duration)
+imageio.mimsave(gif_directory, images, duration=duration, loop=0)
 
